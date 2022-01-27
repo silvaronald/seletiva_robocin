@@ -20,7 +20,7 @@ def main():
         results = log_result(log)
 
         for i in range(10):
-            # The formula used to calculate the score is: (stamina + tackles) * effort
+            # The formula used to calculate the score is: stamina * tackles * effort
             # The final score is the mean of all matches scores
             scores[i] += results[i][0] * results[i][2] * results[i][1] / logs_len
 
